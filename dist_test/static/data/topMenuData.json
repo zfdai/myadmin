@@ -1,0 +1,24 @@
+[
+    {
+        "title": "网站管理",
+        "href": "/webmanage"
+    },
+    {
+        "title": "内容维护",
+        "href": "/maintenance"
+    },
+	{
+        "title": "用户管理2",
+        "children": [
+            {
+                "title": "个人信息2",
+                "href": "/maintenance/userInfo2"
+            },
+            {
+                "title": "修改密码2",
+                "href": "/maintenance/resetPwd2"
+            }
+        ],
+        "spread": "true"
+    }
+]
