@@ -1,0 +1,23 @@
+@import "./variable";
+@import "./keyframes";
+@import "./mixin";
+// 公共
+.relative{
+	position: relative;
+	z-index: 2;
+}
+.t-l{
+	text-align: left;
+} 
+.t-r{
+	text-align: right;
+} 
+.t-c{
+	text-align: center;
+} 
+.padding-l-r-20{
+	padding: 0 20px;
+}
+.height1{
+	height: 1px;
+}

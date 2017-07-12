@@ -1,0 +1,5 @@
+@mixin opacity-animateion{
+	opacity: 0;
+	position: relative;
+	animation-fill-mode:forwards;
+}
