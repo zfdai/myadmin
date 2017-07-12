@@ -5,15 +5,17 @@
     },
     {
         "title": "用户管理",
-        "icon":"icon-user",
+        "icon":"icon-people",
         "children": [
             {
                 "title": "个人信息",
-                "href": "/webmanage/userInfo"
+                "href": "/webmanage/userInfo",
+                "icon":"icon-user"
             },
             {
                 "title": "修改密码",
-                "href": "/webmanage/resetPwd"
+                "href": "/webmanage/resetPwd",
+                "icon":"icon-edit"
             }
         ],
         "spread": "true"

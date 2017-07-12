@@ -4,10 +4,14 @@
 			<el-menu :default-active="defaultActive" class="el-menu-vertical-demo" :router="true" :default-openeds="menuOpends">
 				<el-menu-item index="/home">后台首页</el-menu-item>
 				<div v-for="(item,index) in menuList">
-					<el-menu-item v-if="!item.children||item.children.length==0" :index="item.href">{{item.title}}</el-menu-item>
+					<el-menu-item v-if="!item.children||item.children.length==0" :index="item.href">
+						<i :class="'iconfont '+item.icon"></i>&nbsp;{{item.title}}
+					</el-menu-item>
 					<el-submenu v-else :index="item.title">
-				        <template slot="title"><i class="iconfont"></i>&nbsp;{{item.title}}</template>
-			          	<el-menu-item v-for="(item2,index2) in item.children" :key="index2" :index="item2.href">{{item2.title}}</el-menu-item>
+				        <template slot="title"><i :class="'iconfont '+item.icon"></i>&nbsp;{{item.title}}</template>
+			          	<el-menu-item v-for="(item2,index2) in item.children" :key="index2" :index="item2.href">
+							<i :class="'iconfont iconfont-sub '+(item2.icon||'')"></i>&nbsp;{{item2.title}}
+						</el-menu-item>
 			      	</el-submenu>
 				</div>
 		    </el-menu>
@@ -32,6 +36,10 @@
 		padding: 60px 0 50px 0;
 		margin-top: -60px;
 		height: 100vh;
+		i.iconfont{
+			width:20px;
+			display: inline-block;
+		}
 		.menu-scoll-wrap{
 		    height: 100%;
 			overflow-y: scroll;
