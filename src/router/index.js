@@ -31,6 +31,11 @@ export default new Router({
       component: resolve => require(['../components/common/error/page404'],resolve),
       name:'page404'
     },
+    {
+      path: path.childPath+'/login',
+      component: resolve => require(['../pages/login.vue'],resolve),
+      name:'login'
+    },
     // 空路由跳转
     {
       path: '*',
